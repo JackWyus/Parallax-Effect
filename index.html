@@ -90,28 +90,29 @@
     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
     occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    <script>
-      const stars = document.body.querySelector('#stars'); 
-      const moon = document.body.querySelector('#moon');
-      const mountains_behind = document.body.querySelector('#mountains_behind');
-      const mountains_front = document.body.querySelector('#mountains_front');
-      const text = document.body.querySelector('#text');
-      const btn = document.body.querySelector('.btn');
-
-      let header = document.body.querySelector('header');
-
-      window.addEventListener('scroll', function(){
-        let value = window.scrollY;
-        stars.style.left = value * 0.25 + 'px';
-        moon.style.top = value * 1.05 + 'px';
-        mountains_behind.style.top = value * 0.5 + 'px';
-        mountains_front.style.top = value * 0 + 'px';
-        text.style.marginRight = value * 4 + 'px';
-        text.style.marginTop = value * 1.5 + 'px';
-        btn.style.marginTop = value * 1.5 + 'px';
-        header.style.top = value * 0.5 + 'px';
-      })
-    </script>
   </main>
+
+      <script>
+        const stars = document.body.querySelector('#stars');
+        const moon = document.body.querySelector('#moon');
+        const mountains_behind = document.body.querySelector('#mountains_behind');
+        const mountains_front = document.body.querySelector('#mountains_front');
+        const text = document.body.querySelector('#text');
+        const btn = document.body.querySelector('.btn');
+
+        let header = document.body.querySelector('header');
+
+        window.addEventListener('scroll', function () {
+          let value = window.scrollY;
+          stars.style.left = value * 0.25 + 'px';
+          moon.style.top = value * 1.05 + 'px';
+          mountains_behind.style.top = value * 0.5 + 'px';
+          mountains_front.style.top = value * 0 + 'px';
+          text.style.marginRight = value * 4 + 'px';
+          text.style.marginTop = value * 1.5 + 'px';
+          btn.style.marginTop = value * 1.5 + 'px';
+          header.style.top = value * 0.5 + 'px';
+        })
+      </script>
 </body>
 </html>

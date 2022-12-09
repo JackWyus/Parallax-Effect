@@ -141,7 +141,7 @@ section img#mountains_front
 
 #text{
   position: absolute;
-  right: -350px;
+  /* right: -350px; */
   z-index: 2;
 
   font-size: 7.5vw;
